@@ -1,5 +1,5 @@
 import json
-from core.middleware import add_cors_headers
+from core.middlewares import add_cors_headers
 
 def send_json(handler, status, data):
     handler.send_response(status)
@@ -7,7 +7,6 @@ def send_json(handler, status, data):
     handler.send_header("Content-Type", "application/json")
     handler.end_headers()
     handler.wfile.write(json.dumps(data).encode("utf-8"))
-
 
 def send_404(handler):
     handler.send_response(404)
