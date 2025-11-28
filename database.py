@@ -13,4 +13,3 @@ def init_database():
     """Initialize database and create tables"""
     conn = get_connection()
     cursor = conn.cursor()
-
