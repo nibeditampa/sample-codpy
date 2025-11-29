@@ -8,3 +8,4 @@ from database.queries import (
 
 def service_get_all():
     return db_get_all()
+
