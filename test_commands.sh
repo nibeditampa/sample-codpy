@@ -15,7 +15,7 @@ curl -X POST "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev/a
   }'
 
 # D. Update Student
-curl -X PUT "http://localhost:8000/api/students/1" \
+curl -X PUT "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev/api/students/1" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Alice Updated",
@@ -25,7 +25,7 @@ curl -X PUT "http://localhost:8000/api/students/1" \
   }'
 
 # E. Delete Student
-curl -X DELETE "http://localhost:8000/api/students/1"
+curl -X DELETE "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev//api/students/1"
 
 
 ##################### DB Observation Via SQLite Web
