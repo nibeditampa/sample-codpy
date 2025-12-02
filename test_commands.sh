@@ -25,7 +25,7 @@ curl -X PUT "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev/ap
   }'
 
 # E. Delete Student
-curl -X DELETE "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev//api/students/1"
+curl -X DELETE "https://upgraded-succotash-v69pqrq9jvqpfw4pp-8000.app.github.dev/api/students/1"
 
 
 ##################### DB Observation Via SQLite Web
