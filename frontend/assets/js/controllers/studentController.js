@@ -1,8 +1,7 @@
 import { 
     apiGetAll, 
-    apiGetOne, 
-    // apiCreate, 
-    // apiUpdate, 
+    apiCreate, 
+    apiUpdate, 
     // apiDelete 
 } from "../services/studentService.js";
 
@@ -80,14 +79,14 @@ export async function loadStudents() {
 
 
 // // Create a new student
-// export async function createNewStudent(data) {
-//   const res = await apiCreate(data);
-//   if (res.ok) {
-//     showAlert("Student added!");
-//     resetForm();
-//     loadStudents();
-//   }
-// }
+export async function createNewStudent(data) {
+  const res = await apiCreate(data);
+  if (res.ok) {
+    showAlert("Student added!");
+    resetForm();
+    loadStudents();
+  }
+}
 
 // // Load a student into the form for editing
 // export async function editStudent(id) {
@@ -100,15 +99,15 @@ export async function loadStudents() {
 // }
 
 // // Update an existing student
-// export async function updateStudent(id, data) {
-//   const res = await apiUpdate(id, data);
-//   if (res.ok) {
-//     showAlert("Updated!");
-//     resetForm();
-//     setState({ editingId: null });
-//     loadStudents();
-//   }
-// }
+export async function updateStudent(id, data) {
+  const res = await apiUpdate(id, data);
+  if (res.ok) {
+    showAlert("Updated!");
+    resetForm();
+    setState({ editingId: null });
+    loadStudents();
+  }
+}
 
 // // Delete a student
 // export async function deleteStudentAction(id) {
