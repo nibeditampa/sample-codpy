@@ -1,5 +1,6 @@
 import { 
     apiGetAll, 
+    apiGetOne, 
     apiCreate, 
     apiUpdate, 
     apiDelete 
