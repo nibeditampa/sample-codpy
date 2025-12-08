@@ -1,11 +1,11 @@
 import { 
     apiGetAll, 
     apiCreate, 
-    apiUpdate, 
+    // apiUpdate, 
     // apiDelete 
 } from "../services/studentService.js";
 
-// import { showAlert } from "../components/Alert.js";
+import { showAlert } from "../components/Alert.js";
 import { renderStudentTable } from "../components/StudentTable.js";
 import { resetForm, fillForm } from "../components/StudentForm.js";
 
@@ -98,16 +98,16 @@ export async function createNewStudent(data) {
 //   window.scrollTo({ top: 0, behavior: "smooth" });
 // }
 
-// // Update an existing student
-export async function updateStudent(id, data) {
-  const res = await apiUpdate(id, data);
-  if (res.ok) {
-    showAlert("Updated!");
-    resetForm();
-    setState({ editingId: null });
-    loadStudents();
-  }
-}
+// // // Update an existing student
+// export async function updateStudent(id, data) {
+//   const res = await apiUpdate(id, data);
+//   if (res.ok) {
+//     showAlert("Updated!");
+//     resetForm();
+//     setState({ editingId: null });
+//     loadStudents();
+//   }
+// }
 
 // // Delete a student
 // export async function deleteStudentAction(id) {

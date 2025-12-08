@@ -18,11 +18,11 @@ export async function apiGetAll() {
 }
 
 // // Fetch one student by ID
-// export async function apiGetOne(id) {
-//   const res = await fetch(`${API_URL}/${id}`);
-//   if (!res.ok) return null;
-//   return safeJson(res);
-// }
+export async function apiGetOne(id) {
+  const res = await fetch(`${API_URL}/${id}`);
+  if (!res.ok) return null;
+  return safeJson(res);
+}
 
 // // Create a new student
 export function apiCreate(data) {
@@ -34,13 +34,13 @@ export function apiCreate(data) {
 }
 
 // // Update a student
-export function apiUpdate(id, data) {
-  return fetch(`${API_URL}/${id}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  });
-}
+// export function apiUpdate(id, data) {
+//   return fetch(`${API_URL}/${id}`, {
+//     method: "PUT",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(data)
+//   });
+// }
 
 // // Delete a student
 // export function apiDelete(id) {
